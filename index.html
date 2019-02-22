@@ -1,18 +1,157 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fluxograma</title>
+	<meta charset="utf-8">
+	<title>Pauta Reunião</title>
+
+
+<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   	<style type="text/css">
+
+		code{
+			background-color: lightgray;
+		}
+		.corporativo{
+			background-color: black;
+		}
+		.logotipo-decop{
+			width: 5.2em;
+		}
+
+
+		body{
+			background: #D3CCE3;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		}	
+
+		a{
+			color: black;
+			font-weight: bold;
+		}
+
+
+
+	</style>
+
 </head>
+
 <body>
 
-<h3>Fluxograma Contratação</h3>
-<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile modified=\&quot;2019-02-07T13:13:17.442Z\&quot; host=\&quot;www.draw.io\&quot; agent=\&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36\&quot; etag=\&quot;AvaZE9oqLe06C55_xDrY\&quot; version=\&quot;10.1.9\&quot; type=\&quot;google\&quot;&gt;&lt;diagram id=\&quot;36bA5cw7ud4XIsqbBHe2\&quot; name=\&quot;Page-1\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}">
-</div>
+<!-- Navegação -->
+  <div class="navbar-fixed ">
+    <nav>
+      <div class="nav-wrapper corporativo">
+        <a href="#!" class="brand-logo"><img src="https://raw.githubusercontent.com/vladlemos/atendimentosweb/master/src/app/components/header/logo_black.png" class="logotipo-decop"></a>
+        <ul class="right hide-on-med-and-down">
+        	<li><i class="material-icons"> chat</i></li>
+        	<li><a href="sip:c095060@corp.caixa.gov.br">Denise </a></li>
+			<li><a href="sip:c111710@corp.caixa.gov.br">Chuman </a></li>
+			<li><a href="sip:C079436@corp.caixa.gov.br">Vlad </a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-<script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>
+
+
+
+
+<div class="container">
+	<h4>
+		Reunião com StakeHolders
+	</h4>
+
+	<h5>Projeto de sistematização de Esteira de Contratação</h5>
+
+
+	<!-- Histórico -->
+
+		<ol> 
+			<li>31/01/2019 - Ocorreu a reunião dos Gestores e equipe CEOPC para escolha do Projeto para inicio no 1º Semestre de 2019</li>
+			<li>01/02/2019 ~ 14/02/2019: Foi realizada a primeira SPRINT com vistas a entendimento e esboço do processo, para análise requisitos </li>
+			<li>
+				<strong>22/02/2019 - Fechamento do Escopo do projeto Escolhido.</strong>
+				<ul>
+					<li> Equipe de TI: Requisitos de infra-estrutura, bases de dados, linguagens de programação, apoio GITEC-SP.</li>
+					<li> Equipe de Negócios: fechar regras de negócio como: mensageria, validação de fases, visão para áreas CAIXA e abertura, regras para arquivamento dos documentos, nomenclatura</li>
+				</ul>
+			</li>
+		</ol>
+	<!-- fim histórico  -->
+
+
+	<h5>Metodologias que serão usadas</h5>
+
+	<ol>
+		<li>Kanban: Treinamento de estagiários para atualização semanal, e atualização online trello </li>
+		<li>MVC: separação da regra de negócios das regras de visualização </li>
+		<li>Time Boxed: Sprints de 14 dias para posicionamento andamento do projeto</li>
+	</ol>
+
+	<h5>Em sendo aprovado o escopo como entendemos as Sprints</h5>
+
+	<p> 
+		A sprint inicial do processo seria iniciada pela codificação simultânea de tela de cadastro inicial, layout e interatividade (front-end), regras para banco de dados e classes (codificação php - back-end). Vez que será período de férias de 33% da equipe, propomos refatorar o SIAF nestes 10 dias úteis iniciais.
+	</p>
+
+	
+
+	<h5>Novas funcionalidades</h5>
+
+		<ol>
+			<li>UPLOAD de documentos diretamente no servidor, testado conforme este link: <a href="http://www.ceopc.sp.caixa/testes/index_upload.php" target="_blank"> Página de testes UPLOAD - CEOPC </a></li>
+		</ol>
+
+
+
+	<h5>Perguntas - Time de TI</h5>
+
+		<ol>
+			<li> Dado a possibilidade de mudança no processo de ACC/ACE podemos iniciar apenas com produto de PRONTO, importação e exportação?</li>
+			<li> Como se dá a participação da GECAM (Atende a rede, grava no SIEXC...)? </li>
+			<li> Como devemos catalogar os uploads dos documentos? <br>
+				Ex: CEHOP 
+				<a href="http://www.cehop.sp.caixa/consulta/prop_psq_indv.asp?cons=indv" target="_blank"> - Página da CEHOP </a> - 846728, servidor de dados que utilizam: 
+				<code>\\prdsmbctc.ctc.caixa\SIHAB\7440_5\</code></li>
+		</ol>
+
+
+	<h5>Links</h5>
+
+	<ol>
+		<li><a href="https://trello.com/b/LzHbrr0Y/demandas-ti-1-semestre-2019" target="_blank">Trello</a> </li>
+		<li><a href="fluxo-visao-geral.html" target="_blank">Fluxograma Escopo inteiro</a></li>
+		<li><a href="fluxograma-primeira-fase.html" target="_blank">Fluxograma fase de contratação (excluindo conformidade)</a></li>
+		<li><a href="fluxograma-segunda-fase.html" target="_blank">Fluxograma Conformidade</a></li>
+		<li><a href="canvas_esteira_contratacao.pdf" target="_blank">Canvas</a></li>
+
+	</ol>
+
+
+          
+
+
+
+
+</div> <!-- container -->
+
+ <footer class="page-footer corporativo">
+        
+   <p>© 2019 - Equipe de TI CEOPC.</p>
+          
+ </footer>
+
+
+
+ <!-- Compiled and minified Java -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"><script/>
+    
 
 </body>
 </html>
