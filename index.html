@@ -10,35 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-   	<style type="text/css">
-
-		code{
-			background-color: lightgray;
-		}
-		.corporativo{
-			background-color: black;
-		}
-		.logotipo-decop{
-			width: 5.2em;
-		}
-
-
-		body{
-			background: #D3CCE3;  /* fallback for old browsers */
-			background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-			background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-		}	
-
-		a{
-			color: black;
-			font-weight: bold;
-		}
-
-
-
-	</style>
-
+    <!-- Estilos -->
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
@@ -49,92 +22,123 @@
       <div class="nav-wrapper corporativo">
         <a href="#!" class="brand-logo"><img src="https://raw.githubusercontent.com/vladlemos/atendimentosweb/master/src/app/components/header/logo_black.png" class="logotipo-decop"></a>
         <ul class="right hide-on-med-and-down">
-        	<li><i class="material-icons"> chat</i></li>
+            
+        	<li><i class="material-icons"> chat_bubble_outline</i></li>
         	<li><a href="sip:c095060@corp.caixa.gov.br">Denise </a></li>
 			<li><a href="sip:c111710@corp.caixa.gov.br">Chuman </a></li>
-			<li><a href="sip:C079436@corp.caixa.gov.br">Vlad </a></li>
+            <li><a href="sip:C079436@corp.caixa.gov.br">Vlad </a></li>
+            <li> <a "mailto:ceopc8@caixa.gov.br?cc=c09506@mail.caixa&bcc=c111710@mail.caixa&amp;subject=Projeto%20Esteira%20de%20contratação&amp;body=Deixe%20seu%20recado">#Fale conosco!</a></li>
         </ul>
       </div>
     </nav>
   </div>
 
 
-
-
+<!-- Começo conteúdo-->
 
 <div class="container">
+
+
+
+    
 	<h4>
-		Reunião com StakeHolders
+		Reunião com StakeHolders - Projeto de desenvolvimento da Esteira de Contratação
 	</h4>
 
-	<h5>Projeto de sistematização de Esteira de Contratação</h5>
+    <div class="row">
+      
+        <!-- contexto -->
+            <div class="col s12 m4 ">
+                    <div class="card-panel ">
+                      
+                            <h5 >Contextualizando...</h5>
+                                    <p>31/01/2019 - Ocorreu a reunião dos Gestores e equipe CEOPC para escolha do Projeto para inicio no 1º Semestre de 2019</p>
+                                    <p>01/02/2019 ~ 14/02/2019: Foi realizada a primeira SPRINT com vistas a entendimento e esboço do processo, para análise requisitos </p>
+                                    
+                                    <blockquote>22/02/2019 - Fechamento do Escopo do projeto Escolhido.</blockquote>
+                                        
+                                    <p> Equipe de TI: Levantou requisitos de infra-estrutura, bases de dados, linguagens de programação, com apoio GITEC-SP.</p>
+                                    <p> Equipe de Negócios: fechar regras de negócio como: mensageria, validação de fases, visão para áreas CAIXA e abertura, regras para arquivamento dos documentos, nomenclatura</p>
+                     </div>
+            </div>
+      
+    
+    <!-- Metodologias aplicadas -->
+            <div class="col s12 m4 white-text">
+                    <div class="card-panel grey darken-3 z-depth-5">
+                      
+                            <h5 >Metodologias Aplicadas</h5>
+                                    
+                            <ul>
+                                <li>Kanban: Treinamento de estagiários para atualização semanal do quadro, e nossa atualização online no trello. </li>
+                                <li>MVC: separação da regra de negócios das regras de visualização. </li>
+                                <li>Time Boxed: Sprints de 14 dias para posicionamento andamento do projeto.</li>
+                            </ul>
+                    
+                            <blockquote class="white-text">Em sendo aprovado o escopo como entendemos as Sprints</blockquote>
+
+                            <p class="white-text"> A sprint inicial do processo será iniciada pela codificação simultânea de tela de cadastro inicial,
+                                    layout e interatividade (html/css/js - front-end), regras para banco de dados e classes (codificação php/sql - back-end). 
+                                    Vez que será período de férias de 33% da equipe. 
+                            </p> 
+                            <blockquote class="white-text">   Propomos refatorar o SIAF nestes 10 dias úteis iniciais.   </blockquote>
+                   </div>
+            </div>
+
+        <!-- Novidades -->
+            <div class="col s12 m4">
+                    <div class="card-panel ">
+                    
+                            <h5>Novidades</h5>
+                                    
+                            <ol>
+                                <li>UPLOAD de documentos diretamente no servidor, testado conforme este link: 
+                                    <br><a href="http://www.ceopc.sp.caixa/testes/index_upload.php" target="_blank"> Página de testes UPLOAD - CEOPC </a></li>
+                                <li>Contato dos envolvidos no processo direto pelo Lync</li>
+                            </ol>
+                    
+                            <blockquote>Links de Apoio</blockquote>
+
+                                <ol>
+                                    <li><a href="https://trello.com/b/LzHbrr0Y/demandas-ti-1-semestre-2019" target="_blank">Trello</a> </li>
+                                    <li><a href="fluxo-visao-geral.html" target="_blank">Fluxograma Escopo inteiro</a></li>
+                                    <li><a href="fluxograma-primeira-fase.html" target="_blank">Fluxograma fase de contratação (excluindo conformidade)</a></li>
+                                    <li><a href="fluxograma-segunda-fase.html" target="_blank">Fluxograma Conformidade</a></li>
+                                    <li><a href="canvas_esteira_contratacao.pdf" target="_blank">Canvas</a></li>
+                            
+                                </ol>
+                    </div>
+            </div>
+
+<!-- Perguntas -->
+        <div class="col s12 m12 z-depth-5">
+                <div class="card-panel ">
+                
+                        <h5>Algumas Questões</h5>
+                        
+                        <ol>
+                                <li> Dado a possibilidade de mudança no processo de ACC/ACE podemos iniciar apenas com produto de PRONTO, importação e exportação?</li>
+                                <li> Como se dá a participação da GECAM (Atende a rede, grava no SIEXC...)? </li>
+                                <li> Como devemos catalogar os uploads dos documentos? <br>
+                                    Ex: CEHOP 
+                                    <a href="http://www.cehop.sp.caixa/consulta/prop_psq_indv.asp?cons=indv" target="_blank"> - Página da CEHOP </a> - 846728, servidor de dados que utilizam: 
+                                    <code>\\prdsmbctc.ctc.caixa\SIHAB\7440_5\</code></li>
+                        </ol>
+                        
+                </div>
+        </div>
 
 
-	<!-- Histórico -->
-
-		<ol> 
-			<li>31/01/2019 - Ocorreu a reunião dos Gestores e equipe CEOPC para escolha do Projeto para inicio no 1º Semestre de 2019</li>
-			<li>01/02/2019 ~ 14/02/2019: Foi realizada a primeira SPRINT com vistas a entendimento e esboço do processo, para análise requisitos </li>
-			<li>
-				<strong>22/02/2019 - Fechamento do Escopo do projeto Escolhido.</strong>
-				<ul>
-					<li> Equipe de TI: Requisitos de infra-estrutura, bases de dados, linguagens de programação, apoio GITEC-SP.</li>
-					<li> Equipe de Negócios: fechar regras de negócio como: mensageria, validação de fases, visão para áreas CAIXA e abertura, regras para arquivamento dos documentos, nomenclatura</li>
-				</ul>
-			</li>
-		</ol>
-	<!-- fim histórico  -->
-
-
-	<h5>Metodologias que serão usadas</h5>
-
-	<ol>
-		<li>Kanban: Treinamento de estagiários para atualização semanal, e atualização online trello </li>
-		<li>MVC: separação da regra de negócios das regras de visualização </li>
-		<li>Time Boxed: Sprints de 14 dias para posicionamento andamento do projeto</li>
-	</ol>
-
-	<h5>Em sendo aprovado o escopo como entendemos as Sprints</h5>
-
-	<p> 
-		A sprint inicial do processo seria iniciada pela codificação simultânea de tela de cadastro inicial, layout e interatividade (front-end), regras para banco de dados e classes (codificação php - back-end). Vez que será período de férias de 33% da equipe, propomos refatorar o SIAF nestes 10 dias úteis iniciais.
-	</p>
-
-	
-
-	<h5>Novas funcionalidades</h5>
-
-		<ol>
-			<li>UPLOAD de documentos diretamente no servidor, testado conforme este link: <a href="http://www.ceopc.sp.caixa/testes/index_upload.php" target="_blank"> Página de testes UPLOAD - CEOPC </a></li>
-		</ol>
 
 
 
-	<h5>Perguntas - Time de TI</h5>
-
-		<ol>
-			<li> Dado a possibilidade de mudança no processo de ACC/ACE podemos iniciar apenas com produto de PRONTO, importação e exportação?</li>
-			<li> Como se dá a participação da GECAM (Atende a rede, grava no SIEXC...)? </li>
-			<li> Como devemos catalogar os uploads dos documentos? <br>
-				Ex: CEHOP 
-				<a href="http://www.cehop.sp.caixa/consulta/prop_psq_indv.asp?cons=indv" target="_blank"> - Página da CEHOP </a> - 846728, servidor de dados que utilizam: 
-				<code>\\prdsmbctc.ctc.caixa\SIHAB\7440_5\</code></li>
-		</ol>
 
 
-	<h5>Links</h5>
-
-	<ol>
-		<li><a href="https://trello.com/b/LzHbrr0Y/demandas-ti-1-semestre-2019" target="_blank">Trello</a> </li>
-		<li><a href="fluxo-visao-geral.html" target="_blank">Fluxograma Escopo inteiro</a></li>
-		<li><a href="fluxograma-primeira-fase.html" target="_blank">Fluxograma fase de contratação (excluindo conformidade)</a></li>
-		<li><a href="fluxograma-segunda-fase.html" target="_blank">Fluxograma Conformidade</a></li>
-		<li><a href="canvas_esteira_contratacao.pdf" target="_blank">Canvas</a></li>
-
-	</ol>
+    </div> <!-- Fecha Row-->
 
 
-          
+
+   
 
 
 
@@ -143,7 +147,9 @@
 
  <footer class="page-footer corporativo">
         
-   <p>© 2019 - Equipe de TI CEOPC.</p>
+   <p>Centralizadora Nacional do Corporativo | CEOPC © 2019 - Equipe de TI </p>
+   
+   
           
  </footer>
 
